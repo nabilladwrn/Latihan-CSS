@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Quicksand:wght@500;700&display=swap');	
+
+:root {
+--primary-pink: #ffafcc;     
+--dark-pink: #fb6f92;        
+--soft-cream: #fff5f8;        
+--card-bg: #ffffff;
+--mint-accent: #b9fbc0;      
+--transition-bouncy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.container {
+max-width: 1000px;
+margin: 0 auto;
+width: 90%;
+}
+
+header {
+background-color: var(--primary-pink);
+color: white;
+padding: 80px 0;
+text-align: center;
+border-radius: 0 0 80px 80px; 
+border-bottom: 10px solid #ffc8dd; 
+box-shadow: 0 10px 30px rgba(255, 175, 204, 0.3);
+}
+
+header h1 {
+font-family: 'Bubblegum Sans', cursive;
+font-size: 2.8rem;
+font-weight: 800;
+margin-bottom: 5px;
+text-shadow: 2px 2px 0px rgba(0,0,0,0.05);
+}
+
+.skills-flex-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 25px;
+}
+
+.skill-card {
+background-color: var(--card-bg);
+padding: 25px;
+border-radius: 30px;
+border: 4px solid #ffdee9;
+box-shadow: 8px 8px 0px #ffdee9; 
+width: 160px;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 15px;
+transition: all 0.4s var(--transition-bouncy);
+}
+
+.skill-card img {
+width: 55px;
+height: 55px;
+filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.1));
+}
+
+.skill-card span {
+font-size: 0.95rem;
+font-weight: bold;
+color: var(--dark-pink);
+}
+
+.skill-card:hover {
+transform: scale(1.1) rotate(5deg);
+border-color: var(--dark-pink);
+box-shadow: 10px 10px 0px var(--dark-pink);
+cursor: pointer;
+}
+
+/* --- PROJECT BENTO (GRID) --- */
+.project-grid-container {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 30px;
+}
+
+.project-item {
+background-color: var(--card-bg);
+padding: 30px;
+border-radius: 30px;
+border: 3px dashed var(--primary-pink); /* Garis putus-putus biar lucu */
+transition: all 0.3s ease;
+}
+
+.project-item:hover {
+transform: translateY(-10px);
+background-color: white;
+border: 3px solid var(--dark-pink);
+box-shadow: 0 15px 30px rgba(251, 111, 146, 0.15);
+}
+
+.project-item h3 {
+margin-bottom: 12px;
+color: var(--dark-pink);
+}
+
+#projects {
+background-color: #ffc8dd; 
+padding: 60px 0;
+margin-bottom: 0; 
+border-radius: 80px 80px 80px 80px;
+}
+
+footer {
+background-color: #ffc8dd; 
+}
+
+@media (max-width: 768px) {
+.project-grid-container { grid-template-columns: 1fr; }
+header h1 { font-size: 2rem; }
+.skill-card { width: 140px; }
+}
