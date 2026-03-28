@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Nabilla Dwi Wardani - Latihan CSS</title>
+<link rel="stylesheet" href="style_portfolio.css">
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Quicksand', sans-serif;
+background-color: var(--soft-cream);
+color: #4a4a4a;
+line-height: 1.6;
+}
+
+header {
+width: 100%;
+display: block;
+}
+
+h2 {
+text-align: center;
+color: var(--dark-pink);
+margin-bottom: 30px;
+text-transform: uppercase;
+font-weight: 800;
+letter-spacing: 2px;
+}
+
+footer {
+background-color: white;
+color: #4a4a4a; 
+padding: 20px 0;
+text-align: center;
+border-radius: 0;
+margin-top: 0;
+}
+
+section {
+padding: 40px 10px;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<h1>Nabilla Dwi Wardani</h1>
+<p style="color: #fb6f92; font-weight: 800; font-size: 1.1rem; text-shadow: 1px 1px 2px rgba(255,255,255,0.8);">
+Teknik Informatika 2B - NIM: 2507411050
+</p>
+</div>
+</header>
+
+<section id="skills">
+<div class="container">
+<h2>Programming Skills</h2>
+            
+<div class="skills-flex-container">
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+<span>Java (OOP)</span>
+</div>
+
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+<span>C++</span>
+</div>
+
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+<span>HTML5</span>
+</div>
+
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle">
+<span>Oracle DB</span>
+</div>
+</div>
+</div>
+</section>
+
+<section id="projects" class="dark-bg">
+<div class="container">
+<h2>Project Showcase</h2>
+            
+<div class="project-grid-container">
+                
+<div class="project-item">
+<h3>VFX Technical Review</h3>
+<p>Analisis mendalam mengenai teknik digital compositing dan color grading pada film "Violet Evergarden".</p>
+</div>
+                
+<div class="project-item">
+<h3>Retail Sales Dashboard</h3>
+<p>Analisis data SampleSuperstore menggunakan Excel untuk menghitung Net Sales dan status pengembalian barang.</p>
+</div>
+                
+<div class="project-item">
+<h3>Oracle DB Environment</h3>
+<p>Implementasi dan konfigurasi Oracle Database menggunakan SQL Developer untuk manajemen skema relasional.</p>
+</div>
+                
+<div class="project-item">
+<h3>Class Schedule TI 2B</h3>
+<p>Project pembuatan tabel jadwal kuliah semester genap menggunakan struktur HTML kompleks (Rowspan & Colspan).</p>
+</div>
+</div>
+</div>
+</section>
+
+<footer style="color: #fb6f92; text-align: center; margin-top: 0; width: 100%;">
+<p style="margin: 0; font-weight: bold;">&copy; 2026 Nabilla Dwi Wardani. Submitted for CSS Assignment.</p>
+</footer>
+</body>
+</html>
